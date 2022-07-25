@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@1,700&display=swap" rel="stylesheet">
+
+	<title> Forms </title>
+	
+	<style type="text/css">
+
+		body {
+			text-align: center;
+			background-color: lightblue;
+			font-family: 'Gentium Plus', serif ;
+			font-size: 20px;
+		}
+
+		.my-form {
+			padding: 20px;
+		}
+
+		.my-form .form-group{
+			padding-bottom: 15px;
+		}
+
+		.my-form label {
+			display: block;
+			color: brown;
+		}
+
+		.my-form input[type="text"], .my-form input[type="E-mail"], .my-form input[type="number"] {
+			padding: 8px;
+			width: 30%;
+			height: 3vh;
+			border-radius: 15px;
+		}
+
+		h1 {
+			border: 3px solid brown;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<h1>Resgistration Form</h1>
+
+		<form class="my-form">
+
+			<div class="form-group">
+
+				<label for="1stname">Firstname: </label>
+				<input type="text" name="firstname" id="1stname">
+				<br>
+				<br>
+				<label for="lname">Lastname: </label>
+				<input type="text" name="lastname" id="lname">
+				<br>
+				<br>
+				<label for="email">E-mail: </label>
+				<input type="E-mail" name="E-mail" id="email">
+				<br>
+				<br>
+				<label for="digits">Phone: </label>
+				<input type="number" name="phone" id="digits">
+				<br>
+				<br>
+
+			</div>
+
+			<div id="gend">
+				<label for="sex">Gender: </label>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+			</div>
+		</form>
+</body>
+</html>
